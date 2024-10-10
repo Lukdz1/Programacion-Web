@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- Establece el conjunto de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsiva -->
+    <title>Document</title> <!-- Título del documento -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlaza el archivo CSS para el estilo -->
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" id="display" class="calculator-screen" value="" disabled>
-        <div class="calculator-buttons">
+    <div class="calculator"> <!-- Contenedor principal de la calculadora -->
+        <input type="text" id="display" class="calculator-screen" value="" disabled> <!-- Campo de texto para mostrar resultados, deshabilitado para evitar escritura manual -->
+        <div class="calculator-buttons"> <!-- Contenedor de los botones de la calculadora -->
+            <!-- Botón para limpiar el display -->
             <button class="button" onclick="clearDisplay()">C</button>
+            <!-- Botón para eliminar el último carácter -->
             <button class="button" onclick="deleteLast()">DEL</button>
+            <!-- Botones para operaciones matemáticas -->
             <button class="button" onclick="appendToDisplay('/')">/</button>
-            <button class="button" onclick="appendToDisplay()">*</button>
+            <button class="button" onclick="appendToDisplay('*')">*</button>
 
+            <!-- Botones numéricos del 7 al 1 -->
             <button class="button" onclick="appendToDisplay('7')">7</button>
             <button class="button" onclick="appendToDisplay('8')">8</button>
             <button class="button" onclick="appendToDisplay('9')">9</button>
@@ -25,15 +29,18 @@
             <button class="button" onclick="appendToDisplay('6')">6</button>
             <button class="button" onclick="appendToDisplay('+')">+</button>
 
+            <!-- Botones numéricos del 1 al 0 -->
             <button class="button" onclick="appendToDisplay('1')">1</button>
             <button class="button" onclick="appendToDisplay('2')">2</button>
             <button class="button" onclick="appendToDisplay('3')">3</button>
+            <!-- Botón para calcular el resultado -->
             <button class="button equal-button" onclick="calculateResult()">=</button>
 
+            <!-- Botones numéricos 0 y punto decimal -->
             <button class="button" onclick="appendToDisplay('0')">0</button>
             <button class="button" onclick="appendToDisplay('.')">.</button>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Enlaza el archivo JavaScript que contiene la lógica de la calculadora -->
 </body>
 </html>
