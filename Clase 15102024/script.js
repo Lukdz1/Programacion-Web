@@ -104,26 +104,37 @@ const user = {
 //alert calle, N°, colonia, delegación
 //consola amigos
 
-/*
-function datos() {
-    const user = {
-        nombre:'Lucero',
-        apellidoP:'Hernández',
-        apellidoM:'Hernández',
-        edad:17,
-        direccion :{
-            calle:'Retama',
-            no:21,
-            colonia:'San Lorenzo Totolinga',
-            municipio:'Naucalpan'
-        },
-        amigos:[ 'Ariana,David'],
-        activo:true
-    }    
-}
+//EJEMPLO MÍO
+const user = {
+    nombre: 'Lucero',
+    apellidoP: 'Hernández',
+    apellidoM: 'Hernández',
+    edad: 17,
+    direccion: {
+        calle: 'Retama',
+        no: 21,
+        colonia: 'San Lorenzo Totolinga',
+        municipio: 'Naucalpan'
+    },
+    amigos: ['Ariana', 'David'],
+    activo: true
+};
 
-console.log(user);
-*/
+// Concatenación del nombre completo
+console.log(user.nombre + ' ' + user.apellidoP + ' ' + user.apellidoM);
+
+// Alerta del estado activo
+alert(user.activo);
+
+// Consola de la edad
+console.log(user.edad);
+
+// Alerta de la dirección
+alert('Calle: ' + user.direccion.calle + ', N°: ' + user.direccion.no + ', Colonia: ' + user.direccion.colonia + ', Municipio: ' + user.direccion.municipio);
+
+// Consola de amigos
+console.log(user.amigos.join(', '));
+
 
 
 
